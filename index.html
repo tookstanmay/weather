@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- linking font families from google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital@1&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+  <!-- linking css stylesheet -->
+  <link rel="stylesheet" href="./styles.css">
+  <title>weather.</title>
+
+  <!-- linking favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+
+  <div class="logoContainer displayFlex">
+  <img src="./images/sun.png" alt="meteorite" class="meteoriteImage">
+  <h1 class="heading displayFlex">weather.</h1>
+  </div>
+  <div class="card">
+    <div class="search">
+      <input type="text" name="cityName" id="cityName" placeholder="City" spellcheck="false">
+      <button type="submit"><img src="./images/search.png" alt="search_button_image"></button>
+    </div>
+    <div class="error">Invalid City Name. <span class="invalidEmoji">💀</span></div>
+    <h1 class="defaultText displayFlex">Search by city name.</h1>
+    <div class="weather displayFlex">
+      <img src="./images/rain.png" alt="rain_img" class="weather-icon">
+      <h1 class="temp"></h1>
+      <h2 class="city"></h2>
+      <div class="details displayFlex">
+        <div class="col displayFlex">
+          <img src="images/humidity.png" alt="humidity_img">
+          <div>
+            <p class="humidity">50%</p>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="col displayFlex">
+          <img src="./images/wind.png" alt="wind_img">
+          <div>
+            <p class="wind">23kmph</p>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="displayFlex">
+    made with ❤️ by
+    tookstanmay
+  </footer>
+</body>
+
+  <!-- linking script file -->
+  <script src="./script.js"></script>
+</html>

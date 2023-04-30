@@ -1,0 +1,132 @@
+*{
+    margin: 0;padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.displayFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logoContainer{
+    margin-top: 6px;
+    flex-direction: row;
+}
+
+.meteoriteImage{
+    height: 60px;
+    width: 60px;
+}
+.heading{
+    background: -webkit-linear-gradient(135deg, #001eff, #00ff22);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    height: 60px;
+    font-size: 28px;
+}
+
+.defaultText{
+    color: #ebfffc;
+    font-size: 25px;
+    margin: 30px 0;
+}
+
+.card{
+    background: -webkit-linear-gradient(120deg, #6bff7f, #4359ff);
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    height: 25vh;
+}
+
+footer{
+    margin-top: 40px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.search > input , .search > button{
+    margin: 20px 10px;
+    background: #ebfffc;
+    height: 30px;
+    outline: 0;
+    border: 0;
+}
+
+.search > input{
+    border-radius: 35px;
+    font-size: 18px;
+    width: 240px;
+    height: 60px;
+    padding-left: 22px;
+}
+
+.search > button{
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+}
+
+.search > button > img{
+    width: 16px;
+}
+
+.weather{
+    display: none;
+}
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.weather h1{
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+}
+.weather h2{
+    font-size: 35px;
+    font-weight: 400;
+    margin-top: -20px;
+    color: white;
+}
+
+.details{
+    flex-direction: row;
+    margin-top: 50px;
+    width: 100vw;
+}
+
+.col{
+    flex-direction: row;
+    color: #ffffff;
+    /* margin: 24px; */
+    margin: 30px auto;
+    width: 160px;
+    text-align: left;
+}
+
+.col > img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind{
+    font-size: 26px;
+}
+
+.error{
+    color: white;
+    font-size: 15px;
+    width: 290px;
+    margin: 0px auto;
+    text-align: left;
+    display: none;
+}
