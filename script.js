@@ -106,6 +106,7 @@ searchBtn.addEventListener("click", ()=>{
 window.addEventListener("keydown", (e)=>{
     if (e.key === "Enter"){
         searchBtn.click();
+        searchBox.setAttribute("inputmode", "none"); 
     }
 });
 
