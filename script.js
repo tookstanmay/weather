@@ -103,10 +103,19 @@ searchBtn.addEventListener("click", ()=>{
     checkWeather(searchBox.value);
 });
 
+let inputmodeCheck = false;
 window.addEventListener("keydown", (e)=>{
+   
     if (e.key === "Enter"){
         searchBtn.click();
+    }
+    if (inputmodeCheck === false){
+        searchBox. setAttribute("inputmode","text");
+        inputmodeCheck = true;
+    }
+    else if (inputmodeCheck === true){
         searchBox.setAttribute("inputmode", "none"); 
+        inputmodeCheck = false;
     }
 });
 
